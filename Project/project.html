@@ -3,75 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!-- SEO Meta Tags -->
+    <title> Abhinav|Portfolio</title>
+    <meta name="description" content="Full-stack web developer specializing
+          in React and Node.js. Available for freelance projects.">
+    <meta name="keywords" content="web developer, React, JavaScript, portfolio">
+    <meta name="author" content="Abhinav S Bhat">
+ 
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp previews) -->
+    <meta property="og:title" content="AbhinavSBhat | Web Developer">
+    <meta property="og:description" content="Check out my portfolio and projects!">
+    <meta property="og:image" content="https://abhinav.com/preview.jpg>
+    <meta property="og:url" content="https://johndoe.com">
+    <meta property="og:type" content="website">
+ 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abhinav S Bhat | Web Developer">
+    <meta name="twitter:description" content="Check out my portfolio!">
+    <link rel="icon" href="../Images/image-10.webp">
    
     <title>Portfolio</title>
 </head>
 <body>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#project">Project</a>
-    <a href="#contact">Contact</a>
-    <h1>Hi,I'm Abhinav S Bhat</h1>
+    <header>
+        <nav>
+            <div class="logo">AB</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul> 
+            <button class="theme" aria-label="Toggle Dark Mode" title="Dark">🌛</button>
+            <button class="hamburger" aria-label="menu Toggle" aria-expanded = "false" title="Menu">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="Hero-Section">
+
+            <h1>Hi,I'm Abhinav S Bhat 👋</h1>
     
-    <p>I am Passionate Web Developer from Banglore</p>
-    <section id="about">
+            <p>I am Passionate Web Developer from Banglore</p>
+            <div class="hero-nav">
+                <a href="#projects">View My Work</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+        </section>
 
-        <h2>About Me</h2>
-        <img src="../Images/abhinav.jpeg alt="Profile Picture" width = 200px height = 200px>
-        <p>I love building things on the web. Currently learning HTML,CSS,JavaScript and React.</p>
+        <section id="about">
 
+            <h2>About Me</h2>
+            <figure class="Profile_picture">
+                <img src="../Images/abhinav.jpeg" alt="Profile Picture" width="200" height="200">
+                <figcaption>Abhinav Web Developer</figcaption>
+            </figure>
+             <p>I love building things on the web. Currently learning HTML,CSS,JavaScript and React.</p>
+        </section>
 
-    </section>
-    <section id="skills">
+            <section id="skills" class="skills-section">
         <h2>Skills</h2>
 
-        <ul >
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-           
-        </ul>
+        <div class="skills">
+            <div class="skill-item" data-level="90">HTML</div>
+            <div class="skill-item" data-level="80">CSS</div>
+            <div class="skill-item" data-level="100">Python</div>
+            <div class="skill-item" data-level="50">React</div>
+            <div class="skill-item" data-level="75">JavaScript</div>
+            
+        </div>
 
     </section>
 
     <section id="project">
         <h2>My Projects</h2>
+        <div class="project-grid">
+            <article class="project-card" data-category="">
+                <h3>Snake Game</h3>
+                <img src="../Images/image-34.webp" alt="Snake Game Screenshot" width="400" height="400">            
+                <p>A Fun Snake Game to play when you are boared !!</p>
+                <div class="project-tags">
+                    <span>React</span>
+                    <span>API</span>
+                    
+                </div>
+            
+                <a href="#">Demo API</a>
+                <a href="#">GitHub</a>
+            </article>
+        </div>
 
-        <h3>Project 1</h3>
-        <p>Description of Project 1</p>
-        <a href="#">View Project</a>
-
+    </section>
+    <section id="contact" class="cintact-section">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+            </div>
+            <div>
+                <button class="submit-button" type="submit">Send Message</button>
+            </div>
+            
+        </form>
 
     </section>
 
-    <section id="contact">
-        <!-- <h2>Contact Me</h2>
-        <p>Mobile no. : 7996012111</p>
-        <p>Email: <a href="mailto:abhinavsbhat2007@gmail.com ">abhinavsbhat2007@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/AbhinavSBhat">AbhinavSBhat</a></p> -->
+    </main>
+    <footer class="site-fotter">
+        <p>
+            &copy;Abhinav . Built with HTML & CSS ❤️
+        </p>
 
+        <nav aria-label="Social Links">
+            <a href="https://github.com/AbhinavSBhat" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/abhinav-s-bhat/" target="_blank">Linkedin</a>
+        </nav>
+   
+    </footer>
 
-
-        <h2>Contact Me</h2>
-        <p>Have a Project in mind . Let's Talk</p>
-        <label for="fullname">Name</label>
-        <input type="text"  placeholder="Enter Your Name"name="fullname" id="fullname"> <br>
-        <label for="email">Email</label>
-        <input type="email" placeholder="email" name="email" id="email" required> <br>
-        <label for="subject">Subject</label>
-        <select name="subject" id="subject">
-            <option value="--Select Options--">--Select Options--</option>
-            <option value="hire">I want you hire you</option>
-            <option value="collab">I want to collabrate</option>
-            <option value="others">Others...</option>
-        </select>
-        <label for="msg">Send Your Message</label>
-        <textarea name="msg" id="msg"></textarea>
-        <button type="submit">Submit</button>
-
-
-    </section>
-
+   
 </body>
 </html>
