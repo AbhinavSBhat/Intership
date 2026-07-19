@@ -1,0 +1,57 @@
+*{
+
+}
+
+:root{
+    --primary:#1b4f72;
+    --accent:#F18F01;
+    --text:#2C3E50;
+    --light:#F4F6F8;
+    --white:#FFFFFF;
+    --font-main:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --colour:#dddcdc;
+ 
+}
+ body{
+
+    font-family: var(--font-main);
+    color: var(--text);
+    line-height: 1.5;
+    background-color:#FFFFFF ;
+ }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px , 5%;
+    background-color: rgb(77, 61, 220);
+    
+    
+}
+.logo{
+
+    color:#FFFFFF;
+    font-weight: bold;
+}   
+.menu{
+
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    
+    
+}
+.menu a{
+
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+.menu a:hover{
+
+    color: red;
+}
+.hero-section{
+
+    background:linear-gradient(rgb(77, 61, 220) , rgb(214, 80, 161)) ;
+}
