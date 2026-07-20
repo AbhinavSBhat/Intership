@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary:#1B4F72;
+    --accent:#F18F01;
+    --text:#2C3E50;
+    --rbg:purple;
+    --light:#F4F6F8;
+    --white:#FFFFFF;
+    --font-main:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    font-family: var(--font-main);
+    color: var(--text);
+    line-height: 1.5;
+    background-color: #FFFFFF
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: linear-gradient(to right, var(--accent), var(--rbg));
+}
+.logo{
+    font-size:28px;
+    color:var(--white);
+    font-weight:bold;
+}
+.menu{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+.menu{
+    text-decoration: none;
+    color:var(--white);
+    font-weight: 500;
+}
+.menu a:hover{
+    color:var(--accent);
+}
+.hero-section{
+
+     background-color:var(--accent);
+}
+.hero-nav a{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    text-decoration: none ;
+}
+#about {
+
+    background-color:#eeca95 ;
+}
+#about p{
+
+    text-align: center;
+}
+.Profile_picture{
+
+    text-align: center;
+}
